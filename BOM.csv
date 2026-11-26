@@ -1,0 +1,41 @@
+s.no,name,description,quantity,price per unit (usd),price (usd),product link
+1,PTS815SJG250SMTRLFS,"PTS815SJG250SMTRLFS; C&K; footprint SW-SMD_4P-L4.2-W3.2-P2.15-LS4.6-1; designators A,B,C",5,0.06489994591671173,0.3245,https://robu.in/?s=PTS815SJG250SMTRLFS&post_type=product
+2,TSC005A1626B,"TSC005A1626B; BZCN(博众电气); footprint KEY-SMD_4P-L5.2-W5.2-P3.70-LS6.4; designators BOOT,RST",5,0.006489994591671173,0.03245,https://robu.in/?s=TSC005A1626B&post_type=product
+3,2.4GHz,ESP32-S3-WROOM-1-N16R8; ESPRESSIF(乐鑫); footprint WIRELM-SMD_ESP32-S3-WROOM-1; designators BRAINS,1,0.7933,0.7933,https://robu.in/?s=2.4GHz&post_type=product
+4,104,CC0603MRX5R7BB106; YAGEO(国巨); footprint C0603; designators C1,1,,,https://robu.in/?s=104%200603%20SMD&post_type=product
+5,2.2uF,CC0603MRX5R7BB106; YAGEO(国巨); footprint C0603; designators C2,1,,,https://robu.in/?s=2.2uF%200603%20SMD&post_type=product
+6,0.1uF,"CC0603MRX5R7BB106; YAGEO(国巨); footprint C0603; designators C3,C6,C7,C9",4,,,https://robu.in/?s=0.1uF%200603%20SMD&post_type=product
+7,10uF,"CC0603MRX5R7BB106; YAGEO(国巨); footprint C0603; designators C4,C5,C8",3,0.0351,0.1053,https://robu.in/?s=10uF%200603%20SMD&post_type=product
+8,100nF,CC0603MRX5R7BB106; YAGEO(国巨); footprint C0603; designators C10,1,,,https://robu.in/?s=100nF%200603%20SMD&post_type=product
+9,10uF,"CC0603MRX5R7BB106; YAGEO(国巨); footprint C0603; designators C11,C13",2,,,https://robu.in/?s=10uF%200603%20SMD&post_type=product
+10,22uF,CC0603MRX5R7BB106; YAGEO(国巨); footprint C0603; designators C12,1,,,https://robu.in/?s=22uF%200603%20SMD&post_type=product
+11,1uF,CC0603MRX5R7BB106; YAGEO(国巨); footprint C0603; designators C16,1,,,https://robu.in/?s=1uF%200603%20SMD&post_type=product
+12,MR01A-01211,MR01A-01211; ATOM(爱特姆); footprint TF-SMD_MR01A-01211; designators CARD1,1,0.0479,0.0479,https://robu.in/?s=MR01A-01211&post_type=product
+13,YLED0603R,"YLED0603R; YONGYUTAI(永裕泰); footprint LED0603-FD; designators CHRG,USB-1,USB-2",3,0.0009,0.0027,https://robu.in/?s=YLED0603R&post_type=product
+14,SS14,"SS14; onsemi(安森美); footprint SMA_L4.3-W2.6-LS5.2-RD; designators D1,D2",3,0.2055164954029205,0.616549,https://robu.in/?s=SS14&post_type=product
+15,XF2M-4015-1A,XF2M-4015-1A; OMRON(欧姆龙); footprint FPC-SMD_40P-P0.50_L4.9-W23.5; designators FPC2,1,1.4277988101676582,1.427799,https://robu.in/?s=XF2M-4015-1A&post_type=product
+16,2.54-1*14P母,"2.54-1*14P母; BOOMELE(博穆精密); footprint HDR-TH_14P-P2.54-V-F-1; designators H1,H2",2,0.0217,0.0434,https://robu.in/?s=2.54-1%2A14P%E6%AF%8D&post_type=product
+17,L8050HQLT1G,"L8050HQLT1G; LRC(乐山无线电); footprint SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR; designators Q2,Q3",2,0.021849648458626286,0.043699,https://robu.in/?s=L8050HQLT1G&post_type=product
+18,AO3401A,AO3401A; UMW(友台半导体); footprint SOT-23_L2.9-W1.3-P1.90-LS2.4-BR; designators Q4,1,0.03645213628988642,0.036452,https://robu.in/?s=AO3401A&post_type=product
+19,S8050-J3Y,S8050-J3Y; JSMSEMI(杰盛微); footprint SOT-23-3_L2.9-W1.3-P0.95-LS2.4-BR-1; designators Q5,1,0.0011,0.0011,https://robu.in/?s=S8050-J3Y&post_type=product
+20,10KΩ,"RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R1,R2,R11,R14,R17,R18,R20,R21,R22,R23,R25,R26,R27,R28,R29,R31",16,,,https://robu.in/?s=10K%CE%A9%200603%20SMD&post_type=product
+21,330Ω,"RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R3,R9,R30",3,,,https://robu.in/?s=330%CE%A9%200603%20SMD&post_type=product
+22,2KΩ,RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R4,1,,,https://robu.in/?s=2K%CE%A9%200603%20SMD&post_type=product
+23,100KΩ,RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R5,1,,,https://robu.in/?s=100K%CE%A9%200603%20SMD&post_type=product
+24,5.1KΩ,"RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R6,R8,R10,R12",4,,,https://robu.in/?s=5.1K%CE%A9%200603%20SMD&post_type=product
+25,10Ω,RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R7,1,,,https://robu.in/?s=10%CE%A9%200603%20SMD&post_type=product
+26,4.7KΩ,RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R19,1,,,https://robu.in/?s=4.7K%CE%A9%200603%20SMD&post_type=product
+27,33Ω,RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R24,1,,,https://robu.in/?s=33%CE%A9%200603%20SMD&post_type=product
+28,1KΩ,RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R32,1,,,https://robu.in/?s=1K%CE%A9%200603%20SMD&post_type=product
+29,47Ω,RC0603JR-070RL; YAGEO(国巨); footprint R0603; designators R33,1,,,https://robu.in/?s=47%CE%A9%200603%20SMD&post_type=product
+30,TSC2046IPWR,TSC2046IPWR; TI(德州仪器); footprint TSSOP-16_L5.0-W4.4-P0.65-LS6.4-BL; designators U1,1,0.3002,0.3002,https://robu.in/?s=TSC2046IPWR&post_type=product
+31,USB6B1RL,"USB6B1RL; ST(意法半导体); footprint SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL; designators U2,U5",2,0.5191995673336939,1.038399,https://robu.in/?s=USB6B1RL&post_type=product
+32,TP4054,TP4054; TPOWER(天源); footprint SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BL; designators U3,1,0.0086,0.0086,https://robu.in/?s=TP4054&post_type=product
+33,CH340X,CH340X; WCH(南京沁恒); footprint MSOP-10_L3.0-W3.0-P0.50-LS5.0-BL; designators U7,1,0.8653326122228231,0.865333,https://robu.in/?s=CH340X&post_type=product
+34,TLV1117LV33DCYR,TLV1117LV33DCYR; JSMSEMI(杰盛微); footprint SOT-223-3_L6.6-W3.5-P2.30-LS7.0-BL; designators U8,1,0.45429962141698216,0.4543,https://robu.in/?s=TLV1117LV33DCYR&post_type=product
+35,TYPE-C-31-M-23,"TYPE-C-31-M-23; 韩国韩荣; footprint USB-C-SMD_TYPE-C-31-M-23; designators USB1,USB2",2,0.6489994591671173,1.297999,https://robu.in/?s=TYPE-C-31-M-23&post_type=product
+36,GoldenMorning 2.4 Inch ST7789 TN LCD Touch Display Panel,2.4-inch ST7789 TN LCD touch display,1,7.452677122769064,7.452677,https://robu.in/?s=GoldenMorning%202.4%20Inch%20ST7789%20TN%20LCD%20Touch%20Display%20Panel&post_type=product
+37,B0520WS-7-F,20V 430mV@500mA 500mA SOD-323 Schottky diode,2,0.10816657652785289,0.216333,https://robu.in/?s=B0520WS-7-F&post_type=product
+38,JLCPCB fabrication,PCB fabrication: 5 pieces,1,4.0,4.0,https://jlcpcb.com/
+39,Shipping,Shipping charge,1,21.0,21.0,
+40,GRAND TOTAL,Sum of priced line items only; excludes components with unverified prices,1,,40.10899,
