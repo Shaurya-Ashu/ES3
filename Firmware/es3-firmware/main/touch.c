@@ -14,7 +14,7 @@
 
 static const char *TAG = "touch";
 
-/* Control bytes: start bit, channel, 12-bit, differential, power down between conversions. */
+
 #define CMD_X 0xD0
 #define CMD_Y 0x90
 #define SAMPLES 7
@@ -22,7 +22,7 @@ static const char *TAG = "touch";
 
 typedef struct {
     uint32_t magic;
-    int32_t swap;      /* 1 if screen X follows the raw Y channel */
+    int32_t swap;      
     int32_t L, R, T, B;
 } cal_t;
 
@@ -101,20 +101,20 @@ bool touch_has_calibration(void) { return s_cal_ok; }
 
 bool touch_read_raw(uint16_t *rx, uint16_t *ry)
 {
-    if (gpio_get_level(PIN_TOUCH_IRQ)) return false;   /* PENIRQ# is high when untouched */
+    if (gpio_get_level(PIN_TOUCH_IRQ)) return false;   
 
     uint16_t xs[SAMPLES], ys[SAMPLES];
-    (void)xfer(CMD_X);                                 /* throw away the first conversion */
+    (void)xfer(CMD_X);                                 
     for (int i = 0; i < SAMPLES; i++) {
         xs[i] = xfer(CMD_X);
         ys[i] = xfer(CMD_Y);
     }
-    if (gpio_get_level(PIN_TOUCH_IRQ)) return false;   /* released while sampling */
+    if (gpio_get_level(PIN_TOUCH_IRQ)) return false;   
 
     sort_u16(xs, SAMPLES);
     sort_u16(ys, SAMPLES);
     uint16_t x = xs[SAMPLES / 2], y = ys[SAMPLES / 2];
-    if (x < 50 || x > 4050 || y < 50 || y > 4050) return false;   /* open circuit / noise */
+    if (x < 50 || x > 4050 || y < 50 || y > 4050) return false;   
     *rx = x;
     *ry = y;
     return true;
@@ -141,13 +141,13 @@ bool touch_get(int16_t *x, int16_t *y)
     return true;
 }
 
-/* Wait for a clean press and return the averaged raw position. */
+
 static void wait_press(uint16_t *rx, uint16_t *ry)
 {
     uint16_t x, y;
-    while (touch_read_raw(&x, &y)) vTaskDelay(pdMS_TO_TICKS(10));   /* wait for release */
+    while (touch_read_raw(&x, &y)) vTaskDelay(pdMS_TO_TICKS(10));   
     vTaskDelay(pdMS_TO_TICKS(150));
-    while (!touch_read_raw(&x, &y)) vTaskDelay(pdMS_TO_TICKS(10));  /* wait for press */
+    while (!touch_read_raw(&x, &y)) vTaskDelay(pdMS_TO_TICKS(10));  
 
     uint32_t sx = x, sy = y;
     int n = 1;

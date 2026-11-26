@@ -48,7 +48,7 @@ static const char *TAG = "es3";
 
 typedef struct {
     int pin;
-    bool state;     /* debounced, true = pressed */
+    bool state;     
     int count;
     bool pressed_edge;
 } button_t;
@@ -106,7 +106,7 @@ static bool button_pressed_edge(int i)
     return e;
 }
 
-/* ---------- drawing ---------- */
+
 
 static void line(int y, uint16_t fg, const char *fmt, ...)
 {
@@ -178,8 +178,7 @@ static void ui_message(uint16_t col, const char *msg)
 
 static void splash(void)
 {
-    /* Colour bars: red, green, blue, white, black. If the colours look wrong,
-       toggle LCD_INVERT_COLOR in board.h. */
+   
     const uint16_t bars[5] = {rgb565(255, 0, 0), rgb565(0, 255, 0), rgb565(0, 0, 255),
                               rgb565(255, 255, 255), rgb565(0, 0, 0)};
     for (int i = 0; i < 5; i++) gfx_fill_rect(i * (LCD_W / 5), 0, LCD_W / 5, LCD_H, bars[i]);
@@ -188,7 +187,7 @@ static void splash(void)
     vTaskDelay(pdMS_TO_TICKS(900));
 }
 
-/* ---------- main ---------- */
+
 
 void app_main(void)
 {
@@ -200,10 +199,10 @@ void app_main(void)
     ESP_ERROR_CHECK(err);
 
     spi_bus_setup();
-    gfx_init();            /* display first, so the screen shows what happens next */
+    gfx_init();           
     splash();
-    touch_init();          /* add every SPI device before the SD card is mounted, */
-    battery_init();        /* so all chip selects idle high during SD initialisation */
+    touch_init();          
+    battery_init();        
     buttons_init();
     sd_mount();
 
@@ -225,7 +224,7 @@ void app_main(void)
     for (;;) {
         int64_t now = esp_timer_get_time();
 
-        /* buttons */
+        
         bool prev[3] = {s_btn[0].state, s_btn[1].state, s_btn[2].state};
         buttons_poll();
         if (prev[0] != s_btn[0].state || prev[1] != s_btn[1].state || prev[2] != s_btn[2].state) ui_buttons();
@@ -254,7 +253,7 @@ void app_main(void)
             ui_sd();
         }
 
-        /* touch */
+       
         int16_t x, y;
         bool down = touch_get(&x, &y);
         if (down) {
@@ -278,7 +277,7 @@ void app_main(void)
         }
         was_down = down;
 
-        /* slow status refresh */
+        
         if (now >= next_stats) {
             ui_battery();
             next_stats = now + 500000;

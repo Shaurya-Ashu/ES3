@@ -1,5 +1,5 @@
 #pragma once
-/* Small RGB565 canvas in PSRAM with dirty-rectangle flush to the ST7789 over SPI. */
+
 #include <stdint.h>
 #include <stdbool.h>
 #include "board.h"
@@ -7,7 +7,7 @@
 #define GFX_STRIP_ROWS    20
 #define GFX_MAX_TRANSFER  (LCD_W * GFX_STRIP_ROWS * 2)
 
-/* Colours are stored byte-swapped because the panel wants big-endian RGB565. */
+
 static inline uint16_t rgb565(uint8_t r, uint8_t g, uint8_t b)
 {
     uint16_t v = (uint16_t)(((r & 0xF8) << 8) | ((g & 0xFC) << 3) | (b >> 3));

@@ -1,9 +1,8 @@
 # ES3 board bring-up firmware
 
-ESP-IDF (5.2 or newer) project for the ES3 board: ESP32-S3-WROOM-1 N16R8, 2.4" ST7789V display with
-TSC2046 touch, microSD, three buttons and a battery sense input.
+ESP-IDF (5.2 or newer) project for the ES3 board: ESP32-S3-WROOM-1 N16R8, 2.4" ST7789V display with TSC2046 touch, microSD, three buttons and a battery sense input.
 
-Compiles cleanly with ESP-IDF v5.3.2 (binary about 380 KB). It has not been run on hardware yet.
+Compiles cleanly with ESP-IDF v5.3.2 . It has not been run on hardware yet.
 
 ## Build and flash
 
@@ -46,10 +45,3 @@ All pins and options live in `main/board.h`.
 - `main/battery.c`: ADC with calibration, LiPo percentage curve
 - `tools/gen_font.py`: regenerates `main/font8x16.h` from DejaVu Sans Mono
 
-## Notes
-
-- Start-up order matters: every SPI device is added before the SD card is mounted so all chip selects
-  idle high during SD initialisation.
-- The display runs at 40 MHz. Raise `LCD_SPI_HZ` once the wiring is proven. The SD card runs at 20 MHz and
-  the touch controller at 2 MHz.
-- Battery percentage is a rough LiPo curve. Calibrate against a meter before trusting it.

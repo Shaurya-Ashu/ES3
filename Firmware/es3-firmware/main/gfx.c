@@ -15,8 +15,8 @@
 static const char *TAG = "gfx";
 
 static esp_lcd_panel_handle_t s_panel;
-static uint16_t *s_fb;       /* LCD_W x LCD_H canvas (PSRAM if available) */
-static uint16_t *s_dma;      /* internal DMA-capable strip buffer */
+static uint16_t *s_fb;      
+static uint16_t *s_dma;      
 static SemaphoreHandle_t s_done;
 
 static struct {

@@ -14,17 +14,17 @@
 #define PIN_LCD_CS     10
 #define PIN_LCD_DC      9
 #define PIN_LCD_RST     8
-#define PIN_LCD_BL     14   /* high = backlight on (S8050 low-side switch) */
+#define PIN_LCD_BL     14   
 #define LCD_W          240
 #define LCD_H          320
-#define LCD_SPI_HZ     (40 * 1000 * 1000)  /* raise to 60-80 MHz once wiring is proven */
-#define LCD_INVERT_COLOR 1  /* set to 0 if black and white look swapped */
+#define LCD_SPI_HZ     (40 * 1000 * 1000)  
+#define LCD_INVERT_COLOR 1  
 #define LCD_MIRROR_X     0
 #define LCD_MIRROR_Y     0
 
-/* Touch (TSC2046 / XPT2046) */
+
 #define PIN_TOUCH_CS   15
-#define PIN_TOUCH_IRQ  16   /* PENIRQ#, active low, 100k pull-up on the board */
+#define PIN_TOUCH_IRQ  16   
 #define TOUCH_SPI_HZ   (2 * 1000 * 1000)
 
 /* SD card (SPI mode) */
@@ -32,12 +32,12 @@
 #define SD_MOUNT       "/sdcard"
 #define SD_SPI_KHZ     20000
 
-/* Buttons, active low (switch to GND, 10k pull-up to 3V3) */
+/* Buttons, active low  */
 #define PIN_SW_A       21
 #define PIN_SW_B       47
 #define PIN_SW_C       48
 
-/* Battery sense: BAT+ -> 10k -> IO1 -> 10k -> GND */
+/* Battery sense */
 #define BAT_ADC_UNIT   ADC_UNIT_1
-#define BAT_ADC_CH     ADC_CHANNEL_0   /* IO1 */
+#define BAT_ADC_CH     ADC_CHANNEL_0   
 #define BAT_DIV_RATIO  2.0f
