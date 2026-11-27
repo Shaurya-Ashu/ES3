@@ -38,4 +38,4 @@ s.no,name,description,quantity,price per unit (usd),price (usd),product link
 37,B0520WS-7-F,20V 430mV@500mA 500mA SOD-323 Schottky diode,2,0.10816657652785289,0.216333,https://robu.in/product/b0520ws-7-f-diodes-incorporated-20v-430mv500ma-500ma-sod-323-schottky-diodes-rohs/
 38,JLCPCB fabrication,PCB fabrication: 5 pieces,1,4.0,4.0,https://jlcpcb.com/
 39,Shipping,Shipping charge,1,21.0,21.0,
-40,GRAND TOTAL,Sum of priced line items only; excludes components with unverified prices,1,,40.10899,
+40,GRAND TOTAL,Sum of priced line items only; excludes components with unverified prices,1,48.84,$50,
