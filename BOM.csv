@@ -39,4 +39,4 @@ s.no,name,description,quantity,price per unit (usd),price (usd),product link
 38,Hot Plat,FNIRSI® HT-P1B Mini Hot Plate,1,53.62,53.62,https://quartzcomponents.com/products/fnirsi®-ht-p1b-mini-hot-plate-dual-mode-reflow-heating-station-dc-usb-c-pd?variant=46220717818090&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AYCX9vKKeVtmXw5OcDqytv9w4wljjsmjMFT2zLm1b-WNyIvx8ORoiqhc6AE
 39,JLCPCB fabrication,PCB fabrication: 5 pieces,1,4.0,4.0,https://jlcpcb.com/
 ,Shipping,Shipping charge,1,21.0,21.0,
-,GRAND TOTAL,Sum of priced line items only; excludes components with unverified prices,1,48.84,~$50,
+,GRAND TOTAL,Sum of priced line items only; excludes components with unverified prices,1,,$102,
